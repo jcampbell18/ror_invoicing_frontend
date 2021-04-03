@@ -1,4 +1,19 @@
-# ror_invoicing_frontend
+# Frontend: Invoicing System
+
+## Environment
+
+### Operating System
+
+- [x] Ubuntu 20.10
+
+### IDE
+
+- [x] Rubymine 2020.3
+
+#### Rubymine Setup
+
+- [x] Project Name: ror_invoicing_frontend
+
 
 ## Project setup
 ```
