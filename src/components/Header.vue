@@ -1,13 +1,91 @@
-<header>
-  <section class="title_area">
-    <h1>Doc<span class="orange">Jas</span>.com</h1>
-    <h4>repair &amp; renovation</h4>
-  </section>
-  <section class="login_area">
-    <h5>Welcome User!</h5>
-    <h6 class="access_level">logged in as <span class="white">accesslevel</span></h6>
-    <h6 class="timestamp orange">12:59pm 10/10/2020</h6>
-    <img src="img/jcampbell.jpg" alt="Jason Campbell" title="Jason Campbell"/>
-  </section>
-  <Nav />
-</header>
+<template>
+  <header>
+    <section class="title_area">
+      <h1>Doc<span class="orange">Jas</span>.com</h1>
+      <h4>repair &amp; renovation</h4>
+    </section>
+    <section class="login_area">
+      <h5>Welcome User!</h5>
+      <h6 class="access_level">logged in as <span class="white">accesslevel</span></h6>
+      <h6 class="timestamp orange">12:59pm 10/10/2020</h6>
+      <img src="../assets/images/jcampbell.jpg" alt="Jason Campbell" title="Jason Campbell"/>
+    </section>
+    <Nav />
+  </header>
+</template>
+
+<script>
+export default {
+  name: 'Header',
+  props: {}
+}
+</script>
+
+<style>
+header {
+  width: 100%;
+  background: var(--secondary-color);
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header section.title_area {
+  color: var(--primary-color);
+  padding: 0.0em 0.5em;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+header section.title_area h1 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header section.title_area h4 {
+  padding-bottom: 0.4em;
+}
+
+header section.login_area {
+  align-self: center;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+header section.login_area h5 {
+  grid-row: 1;
+  grid-column: 1;
+  color: grey;
+}
+
+header section.login_area h6.access_level {
+  grid-row: 2;
+  grid-column: 1;
+  color: gray;
+}
+
+header section.login_area h6.timestamp {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+header section.login_area img {
+  grid-row: 1 / span 3;
+  grid-column: 2;
+  width: 100px;
+  height: auto;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 0.3em;
+}
+</style>
