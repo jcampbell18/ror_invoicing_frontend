@@ -1,16 +1,14 @@
 <template>
   <div id="app">
 <!--    <img alt="Vue logo" src="./assets/logo.png">-->
-    <Header />
+    <Header access_level="Admin" />
     <Aside />
-<!--    <HelloWorld msg="Welcome to Your Vue.js App"/>-->
     <Main />
     <Footer />
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
 import Aside from './components/Aside.vue'
 import Main from './components/Main.vue'
@@ -19,7 +17,6 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
     Header,
     Aside,
     Main,
@@ -29,7 +26,7 @@ export default {
 </script>
 
 <style>
-#container {
+#app {
   width: 96%;
   background: var(--off-white);
   border: 4px solid var(--secondary-color);

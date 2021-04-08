@@ -267,7 +267,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 main {
   width: 100%;
   background: inherit;

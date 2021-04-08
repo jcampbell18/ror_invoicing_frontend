@@ -6,7 +6,7 @@
     </section>
     <section class="login_area">
       <h5>Welcome User!</h5>
-      <h6 class="access_level">logged in as <span class="white">accesslevel</span></h6>
+      <h6 class="access_level">logged in as <span class="white">{{ access_level }}</span></h6>
       <h6 class="timestamp orange">12:59pm 10/10/2020</h6>
       <img src="../assets/images/jcampbell.jpg" alt="Jason Campbell" title="Jason Campbell"/>
     </section>
@@ -17,11 +17,13 @@
 <script>
 export default {
   name: 'Header',
-  props: {}
+  props: {
+    access_level: String
+  }
 }
 </script>
 
-<style>
+<style scoped>
 header {
   width: 100%;
   background: var(--secondary-color);
