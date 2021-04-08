@@ -54,7 +54,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 aside {
   width: 100%;
   background: inherit;

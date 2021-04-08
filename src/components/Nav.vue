@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 nav {
   grid-row: 2;
   grid-column: 1 / span 3;

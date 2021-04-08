@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 header {
   width: 100%;
   background: var(--secondary-color);

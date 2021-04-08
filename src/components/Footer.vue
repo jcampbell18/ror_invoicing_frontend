@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 footer {
   width: 100%;
   background: var(--secondary-color);
