@@ -1,20 +1,19 @@
 <template>
-  <main>
-    <MonthlyStats />
-    <StatsCurrentYear />
-    <OutstandingInvoices />
-  </main>
+  <div page="page">
+  </div>
 </template>
 
 <script>
-import MonthlyStats from "@/components/dashboard/MonthlyStats";
-import StatsCurrentYear from "@/components/dashboard/StatsCurrentYear";
-import OutstandingInvoices from "@/components/dashboard/OutstandingInvoices";
+// import MonthlyStats from "@/components/dashboard/MonthlyStats";
 
 export default {
   name: 'Main',
-  components: {OutstandingInvoices, StatsCurrentYear, MonthlyStats},
-  props: {}
+  components: {
+
+  },
+  props: {
+    page: String
+  }
 }
 </script>
 

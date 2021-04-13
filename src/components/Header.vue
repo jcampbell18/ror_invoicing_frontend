@@ -15,11 +15,16 @@
 </template>
 
 <script>
+import Nav from "@/components/Nav";
+
 export default {
   name: 'Header',
+  components: {
+    Nav,
+  },
   props: {
-    access_level: String
-  }
+    access_level: String,
+  },
 }
 </script>
 

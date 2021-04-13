@@ -12,7 +12,7 @@
         <p class="heading">Project Site</p>
       </li>
       <li>
-        <p class="heading">Work Performed</p>
+        <p class="heading">Details</p>
       </li>
       <li>
         <p class="heading">Amount</p>
@@ -27,133 +27,81 @@
         <p class="heading">Print</p>
       </li>
     </ul>
-    <ul class="ul-lines">
+    <ul>
       <li>
-        <p>#0092</p>
-      </li>
-      <li>
-        <p>04/27/2013</p>
-      </li>
-      <li>
-        <p>1703 E 4th Ave, Spokane, WA 99202</p>
-      </li>
-      <li>
-        <p>Short-term Loan</p>
-      </li>
-      <li>
-        <p>$400.00</p>
-      </li>
-      <li>
-        <img src="@/assets/icons/512x512/checkbox_unmarked.png" alt="Completed" title="Completed"/>
-      </li>
-      <li>
-        <a href="">
-          <img src="@/assets/icons/512x512/view.png" alt="View" title="View"/>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="@/assets/icons/512x512/print.png" alt="Print" title="Print"/>
-        </a>
+        <p class="heading">{{  }}</p>
       </li>
     </ul>
     <ul class="ul-lines">
       <li>
-        <p>#0092</p>
+        <p></p>
       </li>
       <li>
-        <p>04/27/2013</p>
+        <p></p>
       </li>
       <li>
-        <p>1703 E 4th Ave, Spokane, WA 99202</p>
+        <p></p>
       </li>
       <li>
-        <p>Short-term Loan</p>
+        <p></p>
       </li>
       <li>
-        <p>$400.00</p>
+        <p></p>
       </li>
       <li>
-        <img src="@/assets/icons/512x512/checkbox_marked.png" alt="Completed" title="Completed"/>
+        <img src="" alt="">
       </li>
       <li>
         <a href="">
-          <img src="@/assets/icons/512x512/view.png" alt="View" title="View"/>
+          <img src="@/assets/icons/preview_black_24dp.svg" alt="View" title="View"/>
         </a>
       </li>
       <li>
         <a href="">
-          <img src="@/assets/icons/512x512/print.png" alt="Print" title="Print"/>
-        </a>
-      </li>
-    </ul>
-    <ul class="ul-lines">
-      <li>
-        <p>#0092</p>
-      </li>
-      <li>
-        <p>04/27/2013</p>
-      </li>
-      <li>
-        <p>1703 E 4th Ave, Spokane, WA 99202</p>
-      </li>
-      <li>
-        <p>Short-term Loan</p>
-      </li>
-      <li>
-        <p>$400.00</p>
-      </li>
-      <li>
-        <img src="@/assets/icons/512x512/checkbox_unmarked.png" alt="Completed" title="Completed"/>
-      </li>
-      <li>
-        <a href="">
-          <img src="@/assets/icons/512x512/view.png" alt="View" title="View"/>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="@/assets/icons/512x512/print.png" alt="Print" title="Print"/>
+          <img src="@/assets/icons/print_black_24dp.svg" alt="Print" title="Print"/>
         </a>
       </li>
     </ul>
-    <ul class="ul-lines">
-      <li>
-        <p>#0092</p>
-      </li>
-      <li>
-        <p>04/27/2013</p>
-      </li>
-      <li>
-        <p>1703 E 4th Ave, Spokane, WA 99202</p>
-      </li>
-      <li>
-        <p>Short-term Loan</p>
-      </li>
-      <li>
-        <p>$400.00</p>
-      </li>
-      <li>
-        <img src="@/assets/icons/512x512/checkbox_marked.png" alt="Completed" title="Completed"/>
-      </li>
-      <li>
-        <a href="">
-          <img src="@/assets/icons/512x512/view.png" alt="View" title="View"/>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="@/assets/icons/512x512/print.png" alt="Print" title="Print"/>
-        </a>
-      </li>
-    </ul>
+<!--    <ul class="ul-lines">-->
+<!--      <li>-->
+<!--        <p>#0092</p>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <p>04/27/2013</p>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <p>1703 E 4th Ave, Spokane, WA 99202</p>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <p>Short-term Loan</p>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <p>$400.00</p>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <img src="@/assets/icons/512x512/checkbox_unmarked.png" alt="Completed" title="Completed"/>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a href="">-->
+<!--          <img src="@/assets/icons/512x512/view.png" alt="View" title="View"/>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <a href="">-->
+<!--          <img src="@/assets/icons/512x512/print.png" alt="Print" title="Print"/>-->
+<!--        </a>-->
+<!--      </li>-->
+<!--    </ul>-->
   </section>
 </template>
 
 <script>
 export default {
   name: 'OutstandingInvoices',
-  props: {}
+  props: {},
+  test: {
+    columns: ['Invoice', 'Date', 'Project Site', 'Details', 'Amount ($)', 'Completed?', 'View', 'Print'],
+  },
 }
 </script>
 

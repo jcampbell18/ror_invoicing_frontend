@@ -20,6 +20,12 @@
 yarn install
 ```
 
+### Vue-CLI & Routing
+
+- `yarn add @vue-cli`
+
+- `vue add router`
+
 ### Compiles and hot-reloads for development
 ```
 yarn serve

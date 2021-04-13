@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-<!--    <img alt="Vue logo" src="./assets/logo.png">-->
-    <Header access_level="Admin" />
+    <Header access_level='Admin' />
     <Aside />
-    <Main />
+    <Main page='Dashboard' />
     <Footer />
   </div>
 </template>
@@ -21,6 +20,9 @@ export default {
     Aside,
     Main,
     Footer,
+  },
+  props: {
+
   }
 }
 </script>
