@@ -1,15 +1,17 @@
 <template>
-  <div page="page">
+  <div>
+    <Companies />
   </div>
 </template>
 
 <script>
 // import MonthlyStats from "@/components/dashboard/MonthlyStats";
+import Companies from "@/components/companies/Companies";
 
 export default {
   name: 'Main',
   components: {
-
+    Companies,
   },
   props: {
     page: String
