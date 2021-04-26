@@ -1,6 +1,6 @@
 <template>
   <section class="companies">
-    <h6>Companies</h6>
+    <h6>{{ companies }}</h6>
     <ul>
       <li v-for="header in headers" :key="header">
         <p class="heading">{{header}}</p>
@@ -27,6 +27,11 @@
 
 <script>
 export default {
+  apollo: {
+    companies: gql`query {
+      Companies
+    }`,
+  },
   name: "Companies",
   props: {},
   data: () => ({
@@ -68,7 +73,6 @@ export default {
 section.companies {
   grid-row: 2;
   grid-column: 1 /  span 2;
-  min-width: 328px;
   width: 100%;
 }
 

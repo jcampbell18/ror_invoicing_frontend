@@ -29,6 +29,16 @@ yarn install
 
 - `vue add router`
 
+### Apollo
+
+#### Install Apollo for client-side
+
+- run command: `yarn add vue-apollo graphql apollo-boost`
+
+- run command: `yarn add vue-apollo graphql apollo-client apollo-link apollo-link-http apollo-cache-inmemory graphql-tag`
+  
+- run command: `vue add apollo`
+
 ### Compiles and hot-reloads for development
 ```
 yarn serve

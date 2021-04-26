@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <Companies />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -27,7 +27,7 @@ main {
 
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(162px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(408px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   gap: 1.2em;
   justify-items: center;
   align-items: start;
