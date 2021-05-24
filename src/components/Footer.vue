@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>DocJas.com | repair & renovation | All rights reserved 2020</p>
+    <p>DocJas.com | repair & renovation | All rights reserved {{ currentYear() }}</p>
     <p>
       Designed & Developed by Jason L Campbell<br />
       Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
@@ -11,7 +11,14 @@
 <script>
 export default {
   name: 'Footer',
-  props: {}
+  props: {},
+  methods: {
+    currentYear () {
+      const current = new Date();
+      const date = `${current.getFullYear()}`;
+      return date;
+    }
+  },
 }
 </script>
 

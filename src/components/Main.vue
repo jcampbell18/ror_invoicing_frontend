@@ -6,7 +6,8 @@
 
 <script>
 // import MonthlyStats from "@/components/dashboard/MonthlyStats";
-import Companies from "@/components/companies/Companies";
+import Companies from "@/components/clients/Clients";
+// import Companies from "@/components/companies/Companies";
 
 export default {
   name: 'Main',

@@ -14,6 +14,7 @@ import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 
 export default {
+  apollo: {},
   name: 'App',
   components: {
     Header,

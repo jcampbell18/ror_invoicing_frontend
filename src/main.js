@@ -8,28 +8,24 @@ import VueApollo from 'vue-apollo'
 
 // HTTP connection to the API
 const link = createHttpLink({
-  // You should use an absolute URL here
-  // uri: 'http://localhost:3020/graphql',
-  uri: process.env.VUE_APP_GRAPHQL_ENDPOINT
+  uri: 'http://localhost:3000/graphql'
 })
-
-// Cache implementation
-const cache = new InMemoryCache()
 
 // Create the apollo client
 export const defaultClient = new ApolloClient({
-  link: link,
-  cache: cache,
+  link,
+  cache: new InMemoryCache(),
   connectToDevTools: true
 })
 
+Vue.use(VueApollo)
+
 const apolloProvider = new VueApollo({
-  defaultClient: defaultClient,
+  defaultClient
 })
 
-Vue.config.productionTip = false
-
 new Vue({
+  el: '#app',
   apolloProvider,
   render: h => h(App),
 }).$mount('#app')

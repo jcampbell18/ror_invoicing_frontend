@@ -1,12 +1,12 @@
 <template>
-  <section class="companies">
-    <h6>{{ name }}</h6>
+  <section class="clients">
+    <h6>Clients</h6>
     <ul>
       <li v-for="header in headers" :key="header">
         <p class="heading">{{header}}</p>
       </li>
     </ul>
-    <ul class="ul-lines" v-for="client in clients" :key="company.id">
+    <ul class="ul-lines" v-for="client in clients" :key="client.id">
       <li>
         <p>{{ client.name }}</p>
       </li>
@@ -46,13 +46,13 @@ export default {
 </script>
 
 <style>
-section.companies {
+section.clients {
   grid-row: 2;
   grid-column: 1 /  span 2;
   width: 100%;
 }
 
-section.companies ul {
+section.clients ul {
   list-style: none;
 
   display: grid;
@@ -61,15 +61,15 @@ section.companies ul {
   align-items: center;
 }
 
-section.companies ul li p {
+section.clients ul li p {
   overflow: hidden;
 }
 
-section.companies ul.ul-lines:nth-child(odd) {
+section.clients ul.ul-lines:nth-child(odd) {
   background: var(--primary-color);
 }
 
-section.companies ul li {
+section.clients ul li {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -77,18 +77,18 @@ section.companies ul li {
   align-items: center;
 }
 
-section.companies ul li img {
+section.clients ul li img {
   width: 32px;
 }
 
-section.companies ul li a img {
+section.clients ul li a img {
   width: 32px;
   padding: 0.2em 0;
   margin: 0 auto;
   display: block;
 }
 
-section.companies ul li input {
+section.clients ul li input {
   justify-self: center;
   align-self: center;
 }
