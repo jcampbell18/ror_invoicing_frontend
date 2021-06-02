@@ -2,28 +2,28 @@
   <aside>
     <ol>
       <li>
-        <a href="">
+        <router-link to="/project_sites">
           <img src="../assets/icons/512x512/project_sites.png" alt="Project Sites" title="Project Sites"/>
           <h6>Project Sites</h6>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="">
+        <a href="/invoicing">
           <img src="../assets/icons/512x512/invoicing.png" alt="Invoicing" title="Invoicing"/>
           <h6>Invoicing</h6>
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="/bids">
           <img src="../assets/icons/512x512/bids.png" alt="Bids" title="Bids"/>
           <h6>Bids</h6>
         </a>
       </li>
       <li>
-        <a href="">
+        <router-link to="/clients">
           <img src="../assets/icons/512x512/users.png" alt="Clients" title="Clients"/>
           <h6>Clients</h6>
-        </a>
+        </router-link>
       </li>
       <li>
         <a href="">

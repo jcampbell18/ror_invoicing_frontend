@@ -1,0 +1,21 @@
+query getClients {
+    clients {
+        id
+        name
+        companyCategory {
+            id
+            name
+        }
+        address
+        city
+        state {
+            id
+            name
+            abbreviation
+        }
+        zipcode
+        phone
+        fax
+        websiteUrl
+    }
+}

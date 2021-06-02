@@ -2,7 +2,7 @@
   <div id="app">
     <Header access_level='Admin' />
     <Aside />
-    <Main page='Dashboard' />
+    <Main page='' />
     <Footer />
   </div>
 </template>
